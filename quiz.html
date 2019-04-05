@@ -7,21 +7,18 @@
 	<title>株式会社　ボイス　採用筆記試験</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<link href="./css/timeTo.css" type="text/css" rel="stylesheet"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="./js/gradeCalc.js" ></script>
-
 </head>
 
 <body>
 
 	<div id="page-wrap">
 		<form action="#" method="post" id="quiz">			
-			<ol>
-				<li>
-					<div>
-						<p id="demo"></p>
-					</div>
-				</li>
+			<div id="countdown-11"></div> 
+			<ol>				
 				<li>
 					<h3>問題１</h3>
 					<div>
@@ -609,6 +606,18 @@
 		pageTracker._initData();
 		pageTracker._trackPageview();
 	</script> -->
+	<script src="./js/jquery.time-to.js" ></script>
+	<script>
+        /**
+         * Hide hours
+         */
+        $('#countdown-11').timeTo({
+            seconds: 900,
+            displayHours: false
+        }, function(){
+        	alert('Countdown finished'); 
+        });
+    </script>
 
 </body>
 

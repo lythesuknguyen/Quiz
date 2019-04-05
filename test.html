@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>sample</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            var testObject = { 'one': 1, 'two': 2, 'three': 3 };
-            // Put the object into storage
-            localStorage.setItem('testObject', JSON.stringify(testObject));
-            // Retrieve the object from storage
-            var retrievedObject = localStorage.getItem('testObject');
-            console.log('retrievedObject: ', JSON.parse(retrievedObject));
-        });
-    </script>
-    
+    <meta charset="utf-8"/>
+
+    <link href="./css/timeTo.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-    <h3>File Open/Save</h3>
-    <button id="openFile">Open</button>
-    <button id="saveFile">Save</button>
-    <br>
-    <textarea id="preview"></textarea>
+    <h3>Hide hours</h3>
 
+    <div id="countdown-11"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/jquery.time-to.js"></script>
+    <script>
+        /**
+         * Hide hours
+         */
+        $('#countdown-11').timeTo({
+            seconds: 60,
+            displayHours: false
+        });
+    </script>
 </body>
 </html>
