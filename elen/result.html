@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>株式会社ボイスー筆記試験</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+	
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/timeTo.css"/>
+	<link rel="stylesheet" href="css/quiz.css"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- dateTimePicker -->
+	<link rel="stylesheet" type="text/css" href="./css/date_time_picker/jquery.datetimepicker.css"/>
+	<script src="./css/date_time_picker/build/jquery.datetimepicker.full.min.js"></script>
+	<script type="text/javascript" src="./js/dateTimePicker.js" ></script>
+</head>
+<body>
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+			<h1 id="colorlib-logo"><a href="#"><ul>
+					<a><img class="image" src="./images/logo.png"></a>
+				</ul></a></h1>
+			<div class="colorlib-footer">
+				<script>document.write(new Date().getFullYear());</script>年 筆記試験 <i class="icon-heart" aria-hidden="true"></i> By <a href="http://i-voice.co.jp" target="_blank">i-Vo!ce</a>
+			</div>				
+		</aside> 
+		
+
+	</div>
+	<div id="page-wrap">
+		<form action="quiz.html" method="post" id="quiz">
+			<p>試験結果：</p><br>
+			<p>0/20</p>
+		</form>
+
+	</div>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="./js/jquery.time-to.js" ></script>
+	<script>
+        /**
+         * Hide hours
+         */
+         $('#countdown-11').timeTo({
+         	seconds: 900,
+         	displayHours: false
+         }, function(){
+         	alert('Countdown finished'); 
+         });
+     </script>
+
+ </body>
+ </html>
