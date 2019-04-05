@@ -1,18 +1,24 @@
 <html>  
-   <head>  
-    <HTA:APPLICATION 
-      APPLICATIONNAME="My App" 
-      SYSMENU="yes">  
-    <title>My App</title>  
-    <style type="text/css">  
-      body {background-color:lightsteelblue;}  
-      p {font:bold 18px arial;}  
-    </style>  
-    <script language="javascript" type="text/javascript">  
-      window.resizeTo(640,480);  
-    </script>  
-   </head>  
-   <body>  
-    <p>Welcome to My First Application<br /><br />Hello World </p>  
-   </body>  
+<head>  
+  <HTA:APPLICATION 
+  APPLICATIONNAME="My App" 
+  SYSMENU="yes">  
+  <title>My App</title>  
+  <style type="text/css">  
+  body {background-color:lightsteelblue;}  
+  p {font:bold 18px arial;}  
+</style>  
+<script language="javascript" type="text/javascript">  
+  window.resizeTo(640,480);  
+</script> 
+<script type="text/vbscript">
+  Set objFileToWrite = CreateObject(“Scripting.FileSystemObject”).OpenTextFile(“C:\file.txt”,2,true)
+  objFileToWrite.WriteLine(data)
+  objFileToWrite.Close
+  Set objFileToWrite = Nothing  
+</script>
+</head>  
+<body>  
+  <p>Welcome to My First Application<br /><br />Hello World </p>  
+</body>  
 </html>
